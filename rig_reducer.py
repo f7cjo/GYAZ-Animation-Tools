@@ -314,7 +314,7 @@ class Op_GYAZ_ReduceRig_MergeWeightsAndRemoveBones (bpy.types.Operator):
                                             m.mix_set = 'ALL'
                                             m.vertex_group_a = weight_to_merge_to
                                             m.vertex_group_b = weight_to_merge
-                                            bpy.ops.object.modifier_apply (apply_as='DATA', modifier="Mix Twist Weight")
+                                            bpy.ops.object.modifier_apply(modifier="Mix Twist Weight")
                                             #delete surplus weights
                                             vgroups = mesh.vertex_groups
                                             vgroups.remove (vgroups[weight_to_merge])
